@@ -6,16 +6,18 @@
 </head>
 <body>
 <script>
-    let numbers = +prompt("nhap so luong so nguyen to ");
+    let numbers = +prompt("nhap so nguyen to ");
     let count = 0;
     let N=2;
     for (N=2;N<numbers;N++){
-        if(numbers%N!==0){
-            document.write('la so nguyen to');
-        }else{
-            document.write('ko la so nguyen to');
+        if(numbers%N==0){
+            count++;
         }
     }
+    if (count==0){
+    document.write(+numbers+' '+'la so nguyen to');
+    }else{
+        document.write(+numbers+' '+'ko la so nguyen to');}
 
 </script>
 </body>
