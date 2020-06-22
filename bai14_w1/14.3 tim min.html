@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array_name = new Array();
+    array_name.length=prompt('nhap so phan tu');
+    for(i=0;i<array_name.length;i++){
+        array_name[i]=prompt('nhap phan tu thu');
+    }
+
+function minArray(arr) {
+        let min = arr[0];
+        for(var i = 1; i < arr.length; i++){
+            if(arr[i] < min){
+            min = arr[i];
+            }
+        }
+return min;
+}
+
+    document.write('phan tu nho nhat la' +  minArray(array_name));
+</script>
+</body>
+</html>

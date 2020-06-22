@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array_name1 = new Array();
+    array_name1.length=prompt('so phan tu trong mang 1');
+    for (i=0;i<array_name1.length;i++){
+        array_name1[i]=prompt('nhap phan tu bat ky');
+    }
+
+    let array_name2 = new Array();
+    array_name2.length=prompt('so phan tu trong mang 2');
+    for (i=0;i<array_name2.length;i++){
+        array_name2[i]=prompt('nhap phan tu bat ky');
+    }
+    let array_name3 = array_name1.concat(array_name2);
+    document.write('cac phan tu trong mang' + array_name1 +'<br>');
+    document.write('cac phan tu trong mang' + array_name2 +'<br>');
+    document.write('cac phan tu trong mang' + array_name3 +'<br>');
+    document.write('dao nguoc cac phan tu trong mang'+ array_name.reverse());
+    document.write('noi cac phan tu thanh chuoi'+ array_name.join());
+    document.write('noi phan tu 2 mang'+ array_name3);
+
+</script>
+</body>
+</html>

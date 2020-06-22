@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" value="" id="A"/><br><br>
+    <input type="button" value="translate" id="C" onclick="translate1()"/><br><br>
+    <input type="text" value="" name="KQ" id='ketqua'/>
+</form>
+<script>
+    let arrayA = ["hello", "hi", "good"];
+    let arrayB = ["xin chao", "chao", "tot"];
+    function translate1() {
+
+        let tuA = document.getElementById('A').value;
+        let tuB;
+        for (i = 0; i < arrayA.length; i++) {
+            if (tuA === arrayA[i]) {
+                tuB = arrayB[i];
+                break;
+            } else if (i === arrayA.length - 1) {
+                tuB = 'khong tim thay';
+            }
+        }
+        document.getElementById('ketqua').value = ' ' + tuB;
+    }
+
+
+
+
+</script>
+</body>
+</html>

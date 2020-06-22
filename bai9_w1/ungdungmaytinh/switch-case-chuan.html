@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label>nhập tháng:</label>
+    <input type="text" id="month" /><br><br>
+    <input type="button" id="clickme" value="Số ngày" onclick="DayOfMonth()">&nbsp;&nbsp;
+    <input type="text" id="ketqua" value="">
+</form>
+<script>
+
+    function DayOfMonth() {
+        thang = document.getElementById("month").value;
+        switch (thang) {
+            case '1':
+            case '3':
+            case '5':
+            case '7':
+            case '8':
+            case '10':
+            case '12':
+                document.getElementById("ketqua").value='31 ngay';
+                break;
+            case '2':
+                document.getElementById("ketqua").value='28 ngay hoac 29 ngay';
+                break;
+            case '4':
+            case '6':
+            case '6':
+            case '9':
+            case '11':
+                document.getElementById("ketqua").value='30 ngay';
+                break;
+            default:
+                document.getElementById("ketqua").value='nhap sai';
+                break;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="doyouloveme.html" style="position:absolute;left:220px;top:175px;">
+    <h1>Do you love me?</h1>
+    <input type="button" name="YES" value="YES" onclick="kickchuot1()">
+    <input type="button" name="NO" value="NO" id="khong" onmouseover="kickchuot2()" style="position:relative;">
+</form>
+
+<script>
+    function kickchuot1() {
+        alert('OK. I love you too');
+    }
+
+    function kickchuot2() {
+
+        let x = Math.round(Math.random()*window.innerWidth);
+        let y = Math.round(Math.random()*window.innerHeight);
+        document.getElementById("khong").style.left = x + 'px';
+        document.getElementById("khong").style.top = y + 'px';
+
+    }
+</script>
+</body>
+</html>

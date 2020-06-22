@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript">
+    function checkNumber() {
+        number = document.getElementById("number").value;
+        switch (number) {
+            case '10':
+                alert("Number = 10");
+                break;
+            case '20':
+                alert("Number = 20");
+                break;
+            case '30':
+                alert("Number = 30");
+                break;
+            default:
+                alert("Not in 10, 20 or 30");
+        }
+    }
+</script>
+</head>
+<body>
+Number:
+<input type="text" id="number" name="number" />
+<input type="button" onclick="checkNumber()" value="Submit" />
+</body>
+</html>

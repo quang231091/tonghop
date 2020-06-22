@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="id1">
+<button type="button" value="convert" onclick="toMeter()">Convert</button>
+<input type="text" id="tometer"><br><br>
+<input type="text" id="id2">
+<button type="button" value="convert" onclick="toFeet()">Convert</button>
+<input type="text" id="tofeet">
+<script>
+let meter1;
+let foot1;
+let meter2;
+let foot2;
+function toMeter() {
+    foot1 = document.getElementById('id1').value;
+    meter1 = 0.305*foot1;
+    document.getElementById('tometer').value = meter1;
+}
+
+function toFeet() {
+    meter2 = document.getElementById('id2').value;
+    foot2 = 3.279*meter2;
+    document.getElementById('tofeet').value = foot2;
+}
+
+</script>
+</body>
+</html>

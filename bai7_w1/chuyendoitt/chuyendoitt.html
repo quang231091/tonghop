@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    table, td, th {
+        text-align: center;
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+</style>
+
+<body>
+<form method="get" action="tessstt.html">
+    <table>
+        <tr>
+            <th colspan="2">Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th>&nbsp</th>
+        </tr>
+        <tr>
+            <td colspan="2"><label for="amount"></label>
+                <input id="amount" type="number">
+            </td>
+
+            <td>
+                <select id="F" name="from">
+                    <option value="1">VND</option>
+                    <option value="23240">USD</option>
+                    <option value="26030">EUR</option>
+                    <option value="3225">CNY</option>
+                    <option value="394">RUB</option>
+                </select>
+            </td>
+            <td>
+                <select id="T" name="to">
+                    <option value="1">VND</option>
+                    <option value="23240">USD</option>
+                    <option value="26030">EUR</option>
+                    <option value="3225">CNY</option>
+                    <option value="394">RUB</option>
+                </select>
+            </td>
+            <td>
+                <button type="button" value="convert" onclick="showResult()">Convert</button>
+            </td>
+        </tr>
+    </table>
+</form>
+<p>Result: <label id="result"></label></p>
+<script>
+    function showResult() {
+        let result,amount,from,to;
+        amount = document.getElementById("amount").value;
+        from = document.getElementById("F").value;
+        to = document.getElementById("T").value;
+        result = (amount * from)/to
+        document.getElementById("result").innerHTML=(result);
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="ungdungmaytinh.html">
+   <input name="account" type="text" id="hienthi"/>
+<table>
+    <tr>
+        <th><button type="button" id="1" value="1" onclick="nhapso('1')">1</button></th>
+        <th><button type="button" id="2" value="2" onclick="nhapso('2')">2</button></th>
+        <th><button type="button" id="3" value="3" onclick="nhapso('3')">3</button></th>
+        <th><button type="button">+</button></th>
+    </tr>
+    <tr>
+        <th><button type="button" id="4" value="4" onclick="nhapso('4')">4</button></th>
+        <th><button type="button" id="5" value="5" onclick="nhapso('5')">5</button></th>
+        <th><button type="button" id="6" value="6" onclick="nhapso('6')">6</button></th>
+        <th><button type="button">-</button></th>
+    </tr>
+    <tr>
+        <th><button type="button" id="7" value="7" onclick="nhapso('7')">7</button></th>
+        <th><button type="button" id="8" value="8" onclick="nhapso('8')">8</button></th>
+        <th><button type="button" id="9" value="9" onclick="nhapso('9')">9</button></th>
+        <th><button type="button">*</button></th>
+    </tr>
+    <tr>
+        <th><button type="button">C</button></th>
+        <th><button type="button" id="0" value="0" onclick="nhapso('0')">0</button></th>
+        <th><button type="button">=</button></th>
+        <th><button type="button">/</button></th>
+    </tr>
+</table>
+    <script>
+        function nhapso(i) {
+            document.getElementById("hienthi").value = document.getElementById("hienthi").value + document.getElementById(i).value;
+        }
+
+    </script>
+</form>
+</body>
+</html>
